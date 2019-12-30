@@ -1,5 +1,5 @@
-const restful = require('node-restful')
-const mongoose = restful.mongoose
+const restful = require('node-restful');
+const mongoose = restful.mongoose;
 
 const mangaSchema = new mongoose.Schema({
     name: { type: String, required: true },
@@ -10,4 +10,4 @@ const mangaSchema = new mongoose.Schema({
     }
 })
 
-module.exports = restful.model('Manga', mangaSchema)
+module.exports = restful.model('Manga', mangaSchema);
